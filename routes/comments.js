@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const commentsCtrl = require('../controllers/comments');
-const isLoggedIn = require('../Middleware/isLoggedIn')
+const isLoggedIn = require('../middleware/isLoggedIn')
 const Photo = require('../models/photo');
 
 router.post('/:id', isLoggedIn, commentsCtrl.create);
