@@ -2,9 +2,9 @@ const Photo = require('../models/photo')
 
 function create(req, res) {
   const commentData = {
-    userId: req.user._id
+    userId: req.user._id,
+    text: req.body.content
   };
-  commentData.text = req.body.content
   Photo.findById(req.params.id, function(err, photo) {
     photo.comments.push(commentData);
     photo.save(function(err) {

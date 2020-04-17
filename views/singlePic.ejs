@@ -1,9 +1,7 @@
 <%- include('./headers/loggedInHeader') %>
 <form id="add-review-form" method="POST" action="/comments/<%= photo._id %>">
-    <td>
-        <img class="singleImg" src="/uploads/<%= photo.url %>" />
-    <td class="picDescription"><%= photo.description %></td>
-    </td>
+    <img class="singleImg" src="/uploads/<%= photo.url %>" />
+    <p class="picDescription"><%= photo.description %></p>
     <label>Comments:</label>
     <textarea name="content"></textarea>
     <input type="submit" value="Add Comment">
@@ -23,11 +21,8 @@
                 </form>
                 <% }; %>
             </td>
-
         </tr>
         <% }); %>
-        <tr>
-        </tr>
     </tbody>
 </table>
 <% } else { %>
