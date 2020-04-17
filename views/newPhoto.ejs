@@ -1,0 +1,10 @@
+<%- include('./headers/loggedInHeader') %>
+<form action="/photos" method="POST" enctype="multipart/form-data">
+    <h1>New Post</h1>
+    <div class="newPic">
+        <input type="file" name="photo">
+        <input class="newPicInput" type="text" name="description">
+        <button class="newPicButton" type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,10 @@
+<%- include('./headers/loggedInHeader') %>
+<div id="feedPic">
+  <% photos.forEach( (p) => { %>
+    <tr>
+        <td> <a href="/singlePic/<%=p._id %>"> <img class="profileImg" src="/uploads/<%= p.url %>"/> </a></td>
+        <td class="picDescription"><%= p.description %></td>
+    </tr>
+  <% }); %>
+</div>
+</body>

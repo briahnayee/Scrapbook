@@ -1,0 +1,8 @@
+<%- include('./headers/loggedInHeader') %>
+
+<form id="edit-form" action="/comments/<%= photo._id %>/<%= comment._id%>/editComment?_method=PUT" method="POST">
+    <label>Comment:</label>
+    <input type="text" name="text" value="<%=comment.text%>">
+    <input type="submit" value="Update Comment">
+  </form>
+</body>
