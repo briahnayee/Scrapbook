@@ -13,7 +13,7 @@ HTML, CSS, JavaScript, MongoDB, Mongoose, OAuth, Node
 ### Project planning Trello board 
 https://trello.com/b/7EQbqe7W/ga-project-2
 
-### Check out the app!: https://seiscrapbook.herokuapp.com/ 
+### Check out the app!: https://seiscrapbook.herokuapp.com/home 
 
 ### Next steps
 In the future, I would like to add functionality that would enable a user to like other's photos. I would also like to add a user profile so that users can see photographer's uploads all in one place. I would also be nice to allow users to add friends or follow other profiles. 
